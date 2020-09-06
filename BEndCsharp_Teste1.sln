@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1169
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEndCsharp_Teste1", "BEndCsharp_Teste1\BEndCsharp_Teste1.csproj", "{86F8A7AD-4D9B-4D78-875E-6809B7720BFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86F8A7AD-4D9B-4D78-875E-6809B7720BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F8A7AD-4D9B-4D78-875E-6809B7720BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86F8A7AD-4D9B-4D78-875E-6809B7720BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86F8A7AD-4D9B-4D78-875E-6809B7720BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6DC93C2-0365-4620-A6A8-C3882DEB65CC}
+	EndGlobalSection
+EndGlobal
