@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using BEndCsharp_Teste1.Models;
 
 namespace BEndCsharp_Teste1
 {
@@ -33,6 +35,9 @@ namespace BEndCsharp_Teste1
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<BEndCsharp_Teste1Context>(options =>
+                    options.UseMySql(Configuration.GetConnectionString("BEndCsharp_Teste1Context"), builder => builder.MigrationsAssembly("BEndCsharp_Teste1")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
