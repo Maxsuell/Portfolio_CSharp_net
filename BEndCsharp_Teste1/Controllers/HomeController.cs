@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using BEndCsharp_Teste1.Models;
+using BEndCsharp_Teste1.Models.ViewsModels;
 
 namespace BEndCsharp_Teste1.Controllers
 {
@@ -13,7 +13,7 @@ namespace BEndCsharp_Teste1.Controllers
         public IActionResult Index()
         {
             return View();
-        }
+        } 
 
         public IActionResult About()
         {

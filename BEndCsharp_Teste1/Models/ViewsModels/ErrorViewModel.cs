@@ -1,6 +1,6 @@
 using System;
 
-namespace BEndCsharp_Teste1.Models
+namespace BEndCsharp_Teste1.Models.ViewsModels
 {
     public class ErrorViewModel
     {
