@@ -3,14 +3,16 @@ using System;
 using BEndCsharp_Teste1.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BEndCsharp_Teste1.Migrations
 {
     [DbContext(typeof(BEndCsharp_Teste1Context))]
-    partial class BEndCsharp_Teste1ContextModelSnapshot : ModelSnapshot
+    [Migration("20200908023235_OtherEntities")]
+    partial class OtherEntities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
