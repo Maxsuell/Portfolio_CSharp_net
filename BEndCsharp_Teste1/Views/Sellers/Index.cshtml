@@ -1,0 +1,50 @@
+﻿@model IEnumerable<BEndCsharp_Teste1.Models.Seller>;
+
+@{
+    ViewData["Title"] = "Sellers";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.Name)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.Email)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.BirthDate)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.BaseSalary)
+            </td>
+
+        </tr>
+
+    </thead>
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(ModelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(ModelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(ModelItem => item.BirthDate)
+            </td>
+            <td>
+                @Html.DisplayFor(ModelItem => item.BaseSalary)
+            </td>
+        </tr>
+    }
+
+
+</table>
+

@@ -15,11 +15,13 @@ namespace BEndCsharp_Teste1.Models
         {
         }
 
-        public SalesRecord(int id, DateTime date, double amount)
+        public SalesRecord(int id, DateTime date, double amount, SaleStatus status, Seller seller)
         {
             Id = id;
             Date = date;
             this.amount = amount;
+            Status = status;
+            Seller = seller;
         }
 
     }

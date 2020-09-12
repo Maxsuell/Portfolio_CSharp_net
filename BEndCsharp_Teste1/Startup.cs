@@ -11,6 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using BEndCsharp_Teste1.Models;
+using BEndCsharp_Teste1.Data;
+using BEndCsharp_Teste1.Data;
+using BEndCsharp_Teste1.Services;
 
 namespace BEndCsharp_Teste1
 {
@@ -38,14 +41,19 @@ namespace BEndCsharp_Teste1
 
             services.AddDbContext<BEndCsharp_Teste1Context>(options =>
                     options.UseMySql(Configuration.GetConnectionString("BEndCsharp_Teste1Context"), builder => builder.MigrationsAssembly("BEndCsharp_Teste1")));
+            services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, SeedingService seedingService)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                seedingService.Seed();
+                
             }
             else
             {
